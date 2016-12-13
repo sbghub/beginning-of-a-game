@@ -161,7 +161,7 @@ class Artisan(Person):
             self.luck += .25
             super(Artisan, self).attack(opponent, "lunges at")
 
-def arm(tool, baseDamage):
+def arm(tool, baseDamage): #ended up not using now for character balance but might reintroduce. Disarming chance could be neat
         if tool=="Katana": baseDamage *= 4
         elif tool=="Spade": baseDamage *= 2.25
         elif tool=="Pick": baseDamage *= 2
